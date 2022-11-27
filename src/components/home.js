@@ -3,9 +3,9 @@ import React from 'react';
 function Home() {
   return (
    <div>
-    <div className='videopage'>
-    
-    <video  loop autoPlay muted id="myVideo">
+    <div className='Homepage'>
+    <video poster="" loop autoPlay muted>
+  <source src="/videos/v.webm" type="video/webm"/>
   <source src="/videos/v.mp4" type="video/mp4"/>
 </video>
 <header class="nav-buttons">
@@ -23,10 +23,11 @@ function Home() {
 <div className='anim'>
 <h1 className='abdul'>ABDUL</h1>
 <h1 className='mannan'>MANNAN</h1>
-</div>
-<p className='line'>Professional Graphic Designer and Video Editor. With over 2 years of experience in Adobe PhotoShop, Adobe Illustrator, Premier Pro, After Effects, and Blender.</p>
+
+<p className='line'>Professional Graphic Designer and Video Editor.<br/> With over 2 years of experience in Adobe PhotoShop, Adobe Illustrator, Premier Pro, After Effects, and Blender.</p>
     <p className='read'>Read More...</p>
     <button className='hirebtn'>Hire Me</button>
+    </div>
     </div>
    </div>
   );
