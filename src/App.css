@@ -105,7 +105,7 @@ margin-top: 0%;
 }
 .anim{
 	position: relative;
-	animation: mymove 1s;
+	animation: mymove 3s;
   }
   @keyframes mymove {
 	from {left: -100%;}
