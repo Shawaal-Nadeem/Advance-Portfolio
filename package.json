@@ -16,7 +16,7 @@
     "bootstrap": "^3.4.1",
     "framer": "^2.2.1",
     "motion": "^10.14.3",
-    "react": "16.8.0",
+    "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-modal-image": "^2.6.0",
     "react-reveal": "^1.2.2",
