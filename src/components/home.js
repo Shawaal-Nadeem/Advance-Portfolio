@@ -107,6 +107,15 @@ image.onclick=()=>{
     </div>
           </Item>
         </Grid>
+        <Grid item xs={4}>
+          <Item>
+          </Item>
+        </Grid>
+        <Grid item xs={8}>
+          <Item>
+          <button className='viewMore'>View More</button>
+          </Item>
+        </Grid>
       </Grid>
       <div className='popup-image'>
         <span>&times;</span>

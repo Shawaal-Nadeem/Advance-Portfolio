@@ -153,7 +153,7 @@ border: transparent;
 }
 .portfolio
 {
-  margin-bottom: 10%;
+  margin-bottom: 25%;
 }
 .portfolio-heading
 {
@@ -164,6 +164,7 @@ font-weight: 400;
 font-size: 48px;
 color: #07102D;
 line-height: 500%;
+margin-bottom: 5%;
 }
 .GraphicDesign
 {
@@ -184,7 +185,7 @@ color: #000000;
 {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content:center;
 }
 .lineDesign
 {
@@ -193,7 +194,7 @@ color: #000000;
 }
 .sline
 {
-width: 200px;
+width: 300px;
 display: block;
 border: 2px solid rgba(0, 0, 0, 0.3);
 transform: rotate(90.09deg);
@@ -266,6 +267,8 @@ object-fit: cover;
 }
 .creativity
 {
+display: flex;
+justify-content: left;
 font-family: 'Leiko';
 font-style: normal;
 font-weight: 400;
@@ -277,4 +280,18 @@ transform: rotate(-90deg);
 .creativityGrid
 {
   margin-top: 90%;
+}
+.viewMore
+{
+width: 170px;
+height: 60px;
+background: #050D24;
+box-shadow: 0 0 17px #050D24;
+border-radius: 4px;
+border-color: transparent;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+color: #FFFFFF;
 }
