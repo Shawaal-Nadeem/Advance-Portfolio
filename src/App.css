@@ -199,6 +199,10 @@ display: block;
 border: 2px solid rgba(0, 0, 0, 0.3);
 transform: rotate(90.09deg);
 }
+.showcase
+{
+  margin-bottom: 10%;
+}
 .designHeading
 {
   font-family: 'Leiko';
@@ -294,4 +298,99 @@ font-style: normal;
 font-weight: 600;
 font-size: 18px;
 color: #FFFFFF;
+}
+.about
+{
+  margin-left: 8%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.rectangle-box
+{
+  margin-top: 20%;
+}
+.rectangle
+{
+  margin-top: -105%;
+  margin-left: -6%;
+  width: 200px;
+  height: 200px;
+  background: #050D24;
+}
+.passport-pic
+{
+width: 462px;
+height: 481px;
+background: #050D24;
+background: url("/public/images/p1.png");
+background-size: 130px,130px;
+background-repeat: no-repeat;
+background-position: 30px 35px ;
+border-radius: 50px;
+}
+.rectangle-shadow
+{
+width: 198px;
+height: 185px;
+background: rgba(5, 13, 36, 0.2);
+}
+.about-text
+{
+  margin-top: 20%;
+  margin-left: 10%;
+  position: sticky;
+}
+.about-heading
+{
+font-family: 'Leiko';
+font-style: normal;
+font-weight: 400;
+font-size: 80px;
+line-height: 123px;
+color: #07102D;
+display: flex;
+justify-content: left;
+}
+.about-lines
+{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 48px;
+color: rgba(0, 0, 0, 0.7);
+}
+.expertise
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.expertise-head
+{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 54px;
+color: rgba(0, 0, 0, 0.7);
+  list-style-type: none;
+}
+.expertise-list
+{
+margin-top: 4%;
+}
+
+.points
+{
+  margin-top: 4%;
+  margin-left: -1%;
+  font-size: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+color: rgba(0, 0, 0, 0.7);
+}
+.list2
+{
+  margin-top: -7%;
 }
