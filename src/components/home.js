@@ -24,6 +24,30 @@ function Home() {
     document.querySelector(".popup-image span").onclick = () => {
       document.querySelector(".popup-image").style.display = "none";
     };
+    var open = document.getElementById('hamburger');
+    var changeIcon = true;
+    
+    open.addEventListener("click", function(){
+    
+        var overlay = document.querySelector('.overlay');
+        var nav = document.querySelector('nav');
+        var icon = document.querySelector('.menu-toggle i');
+    
+        overlay.classList.toggle("menu-open");
+        nav.classList.toggle("menu-open");
+    
+        if (changeIcon) {
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-times");
+    
+            changeIcon = false;
+        }
+        else {
+            icon.classList.remove("fa-times");
+            icon.classList.add("fa-bars");
+            changeIcon = true;
+        }
+    });
   });
   return (
     <div>
@@ -32,47 +56,34 @@ function Home() {
           <source src="/videos/v.webm" type="video/webm" />
           <source src="/videos/v.mp4" type="video/mp4" />
         </video>
-        <header class="nav-buttons">
-          <h1 className="logo">PORTFOLIO</h1>
-          <nav>
-            <ul>
-              <li>
-                <a href="#" className="navbtn-home">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#portfolio" className="navbtn">
-                  Portfolio
-                </a>
-              </li>
-              <li>
-                <a href="#" className="navbtn">
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a href="#" className="navbtn">
-                  Socials
-                </a>
-              </li>
-              <li>
-                <a href="#about" className="navbtn">
-                  About
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </header>
+        <header>
+        <div class="menu-toggle" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="overlay"></div>
+        {/* <div class="container"> */}
+            <nav>
+                <h1><a href="index.html" class="brand">PORTFOLIO</a></h1>
+                <ul>
+                    <li><a href="#" className='navbtn-home'>Home</a></li>
+                    <li><a href="#" className='navbtn'>Portfolio</a></li>
+                    <li><a href="#" className='navbtn'>Contact</a></li>
+                    <li><a href="#"  className='navbtn'>Socials</a></li>
+                    <li><a href="#"  className='navbtn'>About</a></li>
+                </ul>
+            </nav>
+        {/* </div> */}
+</header>
         <div className="anim">
           <h1 className="abdul">ABDUL</h1>
           <h1 className="mannan">MANNAN</h1>
 
           <p className="line">
-            Professional Graphic Designer and Video Editor.
-            <br /> With over 2 years of experience in Adobe PhotoShop, Adobe
-            Illustrator, Premier Pro, After Effects, and Blender.
-          </p>
+            Professional Graphic Designer and Video Editor.</p>
+            <p className="line1">With over 2 years of experience in Adobe PhotoShop,</p> 
+            <p className="line1">Adobe
+            Illustrator, Premier Pro, After Effects, and Blender.</p>
+          
           <p className="read">Read More...</p>
           <button className="hirebtn">Hire Me</button>
         </div>
@@ -199,7 +210,7 @@ function Home() {
           </p>
         </div>
       </div>
-      <div className="portfolio">
+      <div className="Expertise-sections">
           <h1 className="portfolio-heading">Fields of Expertise</h1>
           <div className="expertise">
             <div className="list1">
@@ -222,9 +233,42 @@ function Home() {
                 <li className="points">Animations 2D/3D</li>
                 <li className="points">Intros</li>
                 <li className="points">Advertisment</li>
-               
               </ul>
             </div>
+          </div>
+          <div className="softwares">
+          <h4 className="softwares_head">Softwares I use</h4>
+          <ul className="software-list">
+                <li className="soft_points">Adobe PhotoShop</li>
+                <li className="soft_points">Adobe Illustrator</li>
+                <li className="soft_points">Adobe Premier Pro</li>
+                <li className="soft_points">Adobe After Effects</li>
+                <li className="soft_points">Adobe xd/Figma</li>
+                <li className="soft_points">Blender</li>
+              </ul>
+        </div>
+        </div>
+        
+        <div className="social-section" id="social">
+        <h1 className="social-heading">Socials</h1>
+        <div className="icons">
+        <i class='fas fa-camera-retro' ></i>
+        <i class="fa fa-facebook-official" ></i>
+        <i class="fa fa-youtube-square" ></i>
+        <i class="fa fa-linkedin-square" ></i>
+        </div>
+        </div>
+
+        <div className="contact-section" id="contact">
+          <br/>
+          <h4 className="contact-head">Contact</h4>
+          <div className="links">
+          <p className="insta-links">mannan.babar16@gmail.com</p>
+          <p className="insta-links">https://www.instagram.com/mannan.babar16/</p>
+          <p className="insta-links">https://www.instagram.com/mannan.babar16/</p>
+          <p className="insta-links">https://www.instagram.com/mannan.babar16/</p>
+          <p className="insta-links">+92 300 4256110</p>
+          <button className="mail-btn">Click to send mail</button>
           </div>
         </div>
     </div>
