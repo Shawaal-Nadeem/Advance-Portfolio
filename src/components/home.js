@@ -48,6 +48,14 @@ function Home() {
             changeIcon = true;
         }
     });
+    const navbarMenu = document.getElementById("menu-open");
+const navbarLinks = document.querySelectorAll("menu-open a");
+
+navbarLinks.forEach(function(link) {
+  link.addEventListener("click", function() {
+    navbarMenu.classList.remove("is-active");
+  });
+});
   });
   return (
     <div>
@@ -61,35 +69,32 @@ function Home() {
             <i class="fas fa-bars"></i>
         </div>
         <div class="overlay"></div>
-        {/* <div class="container"> */}
             <nav>
                 <h1><a href="index.html" class="brand">PORTFOLIO</a></h1>
                 <ul>
                     <li><a href="#" className='navbtn-home'>Home</a></li>
-                    <li><a href="#" className='navbtn'>Portfolio</a></li>
-                    <li><a href="#" className='navbtn'>Contact</a></li>
-                    <li><a href="#"  className='navbtn'>Socials</a></li>
-                    <li><a href="#"  className='navbtn'>About</a></li>
+                    <li><a href="#portfolio" className='navbtn'>Portfolio</a></li>
+                    <li><a href="#contact" className='navbtn'>Contact</a></li>
+                    <li><a href="#social"  className='navbtn'>Socials</a></li>
+                    <li><a href="#about"  className='navbtn'>About</a></li>
                 </ul>
             </nav>
-        {/* </div> */}
 </header>
-        <div className="anim">
+        <div>
           <h1 className="abdul">ABDUL</h1>
           <h1 className="mannan">MANNAN</h1>
 
-          <p className="line">
-            Professional Graphic Designer and Video Editor.</p>
+          {/* <p className="line">
+            Professional &nbsp;<span>Graphic&nbsp;Designer </span>&nbsp;and&nbsp;<span> &nbsp;Video&nbsp;Editor </span>.</p>
             <p className="line1">With over 2 years of experience in Adobe PhotoShop,</p> 
             <p className="line1">Adobe
-            Illustrator, Premier Pro, After Effects, and Blender.</p>
+            Illustrator, Premier Pro, After Effects, and Blender.</p> */}
           
           <p className="read">Read More...</p>
           <button className="hirebtn">Hire Me</button>
         </div>
       </div>
 
-      <Fade top distance="10%" duration={1500}>
         <div className="portfolio" id="portfolio">
           <h1 className="portfolio-heading">PORTFOLIO</h1>
           <div className="portfolioButtons">
@@ -100,44 +105,41 @@ function Home() {
             <button className="GraphicDesign">Video Editing</button>
           </div>
         </div>
-      </Fade>
 
       <div className="showcase">
         <Grid container spacing={2}>
           <Grid item xs={4}>
             <Item>
-              <h1 className="designHeading">
-                Designs <br />&<br />
-                Artworks
-              </h1>
+              <div className="image-container">
+                <div className="image">
+                  <img src="/images/d3c.png" />
+                </div>
+              </div>
+            </Item>
+          </Grid>
+          <Grid item xs={4}>
+            <Item>
+              <div className="image-container">
+                <div className="image">
+                  <img src="/images/d3c.png" />
+                </div>
+              </div>
+            </Item>
+          </Grid>
+          <Grid item xs={4}>
+            <Item>
+              <div className="image-container">
+                <div className="image">
+                  <img src="/images/d3c.png" />
+                </div>
+              </div>
             </Item>
           </Grid>
           <Grid item xs={8}>
             <Item>
               <div className="image-container">
                 <div className="image">
-                  <img src="/images/d1.png" />
-                </div>
-              </div>
-            </Item>
-          </Grid>
-          <Grid item xs={4}>
-            <Item className="creativityGrid">
-              <h1 className="creativity">Creativity</h1>
-            </Item>
-          </Grid>
-          <Grid item xs={4}>
-            <Item>
-              <div className="image-container">
-                <div className="image">
-                  <img src="/images/d2.png" />
-                </div>
-              </div>
-            </Item>
-            <Item>
-              <div className="image-container">
-                <div className="image">
-                  <img src="/images/d4.png" />
+                  <img src="/images/d3l.png" />
                 </div>
               </div>
             </Item>
@@ -146,52 +148,39 @@ function Home() {
             <Item>
               <div className="image-container">
                 <div className="image">
-                  <img src="/images/d3.png" />
+                  <img src="/images/d3c.png" />
                 </div>
               </div>
-            </Item>
-            <Item>
-              <div className="image-container">
-                <div className="image">
-                  <img src="/images/d5.png" />
-                </div>
-              </div>
-            </Item>
-          </Grid>
-          <Grid item xs={4}>
-            <Item></Item>
-          </Grid>
-          <Grid item xs={8}>
-            <Item>
-              <button className="viewMore">View More</button>
             </Item>
           </Grid>
         </Grid>
         <div className="popup-image">
           <span>&times;</span>
-          <img src="/images/d1.png" alt="" />
+          <img src="/images/d3c.png" alt="" />
         </div>
         <div className="popup-image">
           <span>&times;</span>
-          <img src="/images/d2.png" alt="" />
+          <img src="/images/d3c.png" alt="" />
         </div>
         <div className="popup-image">
           <span>&times;</span>
-          <img src="/images/d3.png" alt="" />
+          <img src="/images/d3c.png" alt="" />
         </div>
         <div className="popup-image">
           <span>&times;</span>
-          <img src="/images/d4.png" alt="" />
+          <img src="/images/d3l.png" alt="" />
         </div>
         <div className="popup-image">
           <span>&times;</span>
-          <img src="/images/d5.png" alt="" />
+          <img src="/images/d3c.png" alt="" />
+        </div>
+        <div className="viewbtn">
+        <button className="viewMore">View More</button>
         </div>
       </div>
 
       <div className="about">
         <div className="rectangle-box">
-          <div className="rectangle-shadow"></div>
           <div className="rectangle">
             <div className="passport-pic"></div>
           </div>
@@ -233,10 +222,13 @@ function Home() {
                 <li className="points">Animations 2D/3D</li>
                 <li className="points">Intros</li>
                 <li className="points">Advertisment</li>
+                <li className="points">Advertisment</li>
+                <li className="points">Advertisment</li>
               </ul>
             </div>
           </div>
-          <div className="softwares">
+        </div>
+        <div className="softwares">
           <h4 className="softwares_head">Softwares I use</h4>
           <ul className="software-list">
                 <li className="soft_points">Adobe PhotoShop</li>
@@ -246,7 +238,6 @@ function Home() {
                 <li className="soft_points">Adobe xd/Figma</li>
                 <li className="soft_points">Blender</li>
               </ul>
-        </div>
         </div>
         
         <div className="social-section" id="social">
